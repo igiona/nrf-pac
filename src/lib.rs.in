@@ -1,0 +1,16 @@
+// This is auto-generated, do not edit!
+// Edit lib.rs.in instead
+
+#![no_std]
+#![allow(non_camel_case_types)]
+#![doc = include_str!("../README.md")]
+
+#[cfg(all(CHIPS_CFG_ALL))]
+compile_error!("You must not enable multiple Cargo features: CHIP_LIST.");
+
+#[cfg(not(any(CHIPS_CFG_ANY)))]
+compile_error!("You must enable at least one Cargo feature: CHIP_LIST.");
+
+CHIP_CFG_ATTRS
+mod inner;
+pub use inner::*;
