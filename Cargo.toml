@@ -16,11 +16,13 @@ cortex-m-rt = { version = ">=0.6.15,<0.8", optional = true }
 [features]
 default = []
 rt = ["cortex-m-rt/device"]
+nrf52833 = []
 nrf52840 = []
 
 [package.metadata.embassy_docs]
 src_base = "https://github.com/embassy-rs/nrf-pac/blob/v$VERSION/src/"
 src_base_git = "https://github.com/embassy-rs/nrf-pac/blob/$COMMIT/src/"
 flavors = [
+    { name = "nrf52833", features = ["nrf52833"], target = "thumbv7em-none-eabihf" },
     { name = "nrf52840", features = ["nrf52840"], target = "thumbv7em-none-eabihf" }
 ]

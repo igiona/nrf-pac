@@ -22,7 +22,7 @@ macro_rules! convert_required_x_file {
 fn main() {
     if env::var_os("CARGO_FEATURE_RT").is_some() {
         let out = &PathBuf::from(env::var_os("OUT_DIR").unwrap());
-        convert_required_x_file!(out, ("nrf52840", "nrf52840"));
+        convert_required_x_file!(out, ("nrf52833", "nrf52833"), ("nrf52840", "nrf52840"));
         println!("cargo:rustc-link-search={}", out.display());
         println!("cargo:rerun-if-changed=device.x");
     }

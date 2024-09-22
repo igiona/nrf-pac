@@ -44,10 +44,12 @@ rm -rf src/lib.rs
 declare -A identifiers=(
     # Chip name to SVD/YAML/.X identifier
     # This allows to have multiple chip definition with the same SVD/YAML/.X file-set (e.g. for the nrf5340-app chip)
+    ["nrf52833"]="nrf52833"
     ["nrf52840"]="nrf52840"
 )
 declare -A targets=(
     # Chip name to CPU arch target
+    ["nrf52833"]="thumbv7em-none-eabihf"
     ["nrf52840"]="thumbv7em-none-eabihf"
 )
 chips=($(printf "%s\n" "${!identifiers[@]}" | sort))
