@@ -18,11 +18,17 @@ default = []
 rt = ["cortex-m-rt/device"]
 nrf52833 = []
 nrf52840 = []
+nrf5340-app-ns = []
+nrf5340-app-s = []
+nrf5340-net = []
 
 [package.metadata.embassy_docs]
 src_base = "https://github.com/embassy-rs/nrf-pac/blob/v$VERSION/src/"
 src_base_git = "https://github.com/embassy-rs/nrf-pac/blob/$COMMIT/src/"
 flavors = [
     { name = "nrf52833", features = ["nrf52833"], target = "thumbv7em-none-eabihf" },
-    { name = "nrf52840", features = ["nrf52840"], target = "thumbv7em-none-eabihf" }
+    { name = "nrf52840", features = ["nrf52840"], target = "thumbv7em-none-eabihf" },
+    { name = "nrf5340-app-ns", features = ["nrf5340-app-ns"], target = "thumbv8m.main-none-eabihf" },
+    { name = "nrf5340-app-s", features = ["nrf5340-app-s"], target = "thumbv8m.main-none-eabihf" },
+    { name = "nrf5340-net", features = ["nrf5340-net"], target = "thumbv8m.main-none-eabihf" }
 ]

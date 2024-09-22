@@ -46,11 +46,17 @@ declare -A identifiers=(
     # This allows to have multiple chip definition with the same SVD/YAML/.X file-set (e.g. for the nrf5340-app chip)
     ["nrf52833"]="nrf52833"
     ["nrf52840"]="nrf52840"
+    ["nrf5340-app-s"]="nrf5340-app"
+    ["nrf5340-app-ns"]="nrf5340-app"
+    ["nrf5340-net"]="nrf5340-net"
 )
 declare -A targets=(
     # Chip name to CPU arch target
     ["nrf52833"]="thumbv7em-none-eabihf"
     ["nrf52840"]="thumbv7em-none-eabihf"
+    ["nrf5340-app-s"]="thumbv8m.main-none-eabihf"
+    ["nrf5340-app-ns"]="thumbv8m.main-none-eabihf"
+    ["nrf5340-net"]="thumbv8m.main-none-eabihf"
 )
 chips=($(printf "%s\n" "${!identifiers[@]}" | sort))
 

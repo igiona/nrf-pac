@@ -10,6 +10,7 @@ This crate is used for the [`embassy-nrf`](github.com/embassy-rs/embassy/) Rust 
 
 - **nrf52833**: [Datasheet](https://docs-be.nordicsemi.com/bundle/ps_nrf52833/attach/nRF52833_PS_v1.7.pdf?_LANG=enus)
 - **nrf52840**: [Datasheet](https://docs-be.nordicsemi.com/bundle/ps_nrf52840/attach/nRF52840_PS_v1.10.pdf?_LANG=enus)
+- **nrf5340** (both `application` and `network` cores): [Datasheet](https://docs-be.nordicsemi.com/bundle/ps_nrf5340/attach/nRF5340_PS_v1.5.pdf?_LANG=enus)
 
 ### Add support for a new chip
 
