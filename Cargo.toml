@@ -1,11 +1,26 @@
+# This is auto-generated, do not edit!
+# Edit Cargo.toml.in instead
+# 
 [package]
 name = "nrf-pac"
 version = "0.1.0"
 edition = "2021"
+license = "BSD-3-Clause"
+repository = "https://github.com/embassy-rs/nrf-pac"
+description = "Peripheral Access Crate (PAC) for Nordic Semiconductor nRF microcontrollers."
 
 [dependencies]
 cortex-m = "0.7.1"
 cortex-m-rt = { version = ">=0.6.15,<0.8", optional = true }
 
 [features]
+default = []
 rt = ["cortex-m-rt/device"]
+nrf52840 = []
+
+[package.metadata.embassy_docs]
+src_base = "https://github.com/embassy-rs/nrf-pac/blob/v$VERSION/src/"
+src_base_git = "https://github.com/embassy-rs/nrf-pac/blob/$COMMIT/src/"
+flavors = [
+    { name = "nrf52840", features = ["nrf52840"], target = "thumbv7em-none-eabihf" }
+]

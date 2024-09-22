@@ -1,0 +1,2419 @@
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum Addr0 {
+    #[doc = "Disable"]
+    DISABLED = 0x0,
+    #[doc = "Enable"]
+    ENABLED = 0x01,
+}
+impl Addr0 {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> Addr0 {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for Addr0 {
+    #[inline(always)]
+    fn from(val: u8) -> Addr0 {
+        Addr0::from_bits(val)
+    }
+}
+impl From<Addr0> for u8 {
+    #[inline(always)]
+    fn from(val: Addr0) -> u8 {
+        Addr0::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum Addr1 {
+    #[doc = "Disable"]
+    DISABLED = 0x0,
+    #[doc = "Enable"]
+    ENABLED = 0x01,
+}
+impl Addr1 {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> Addr1 {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for Addr1 {
+    #[inline(always)]
+    fn from(val: u8) -> Addr1 {
+        Addr1::from_bits(val)
+    }
+}
+impl From<Addr1> for u8 {
+    #[inline(always)]
+    fn from(val: Addr1) -> u8 {
+        Addr1::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum Addr2 {
+    #[doc = "Disable"]
+    DISABLED = 0x0,
+    #[doc = "Enable"]
+    ENABLED = 0x01,
+}
+impl Addr2 {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> Addr2 {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for Addr2 {
+    #[inline(always)]
+    fn from(val: u8) -> Addr2 {
+        Addr2::from_bits(val)
+    }
+}
+impl From<Addr2> for u8 {
+    #[inline(always)]
+    fn from(val: Addr2) -> u8 {
+        Addr2::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum Addr3 {
+    #[doc = "Disable"]
+    DISABLED = 0x0,
+    #[doc = "Enable"]
+    ENABLED = 0x01,
+}
+impl Addr3 {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> Addr3 {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for Addr3 {
+    #[inline(always)]
+    fn from(val: u8) -> Addr3 {
+        Addr3::from_bits(val)
+    }
+}
+impl From<Addr3> for u8 {
+    #[inline(always)]
+    fn from(val: Addr3) -> u8 {
+        Addr3::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum Addr4 {
+    #[doc = "Disable"]
+    DISABLED = 0x0,
+    #[doc = "Enable"]
+    ENABLED = 0x01,
+}
+impl Addr4 {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> Addr4 {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for Addr4 {
+    #[inline(always)]
+    fn from(val: u8) -> Addr4 {
+        Addr4::from_bits(val)
+    }
+}
+impl From<Addr4> for u8 {
+    #[inline(always)]
+    fn from(val: Addr4) -> u8 {
+        Addr4::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum Addr5 {
+    #[doc = "Disable"]
+    DISABLED = 0x0,
+    #[doc = "Enable"]
+    ENABLED = 0x01,
+}
+impl Addr5 {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> Addr5 {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for Addr5 {
+    #[inline(always)]
+    fn from(val: u8) -> Addr5 {
+        Addr5::from_bits(val)
+    }
+}
+impl From<Addr5> for u8 {
+    #[inline(always)]
+    fn from(val: Addr5) -> u8 {
+        Addr5::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum Addr6 {
+    #[doc = "Disable"]
+    DISABLED = 0x0,
+    #[doc = "Enable"]
+    ENABLED = 0x01,
+}
+impl Addr6 {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> Addr6 {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for Addr6 {
+    #[inline(always)]
+    fn from(val: u8) -> Addr6 {
+        Addr6::from_bits(val)
+    }
+}
+impl From<Addr6> for u8 {
+    #[inline(always)]
+    fn from(val: Addr6) -> u8 {
+        Addr6::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum Addr7 {
+    #[doc = "Disable"]
+    DISABLED = 0x0,
+    #[doc = "Enable"]
+    ENABLED = 0x01,
+}
+impl Addr7 {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> Addr7 {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for Addr7 {
+    #[inline(always)]
+    fn from(val: u8) -> Addr7 {
+        Addr7::from_bits(val)
+    }
+}
+impl From<Addr7> for u8 {
+    #[inline(always)]
+    fn from(val: Addr7) -> u8 {
+        Addr7::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum Ccamode {
+    #[doc = "Energy above threshold"]
+    EDMODE = 0x0,
+    #[doc = "Carrier seen"]
+    CARRIERMODE = 0x01,
+    #[doc = "Energy above threshold AND carrier seen"]
+    CARRIERANDEDMODE = 0x02,
+    #[doc = "Energy above threshold OR carrier seen"]
+    CARRIEROREDMODE = 0x03,
+    #[doc = "Energy above threshold test mode that will abort when first ED measurement over threshold is seen. No averaging."]
+    EDMODETEST1 = 0x04,
+    _RESERVED_5 = 0x05,
+    _RESERVED_6 = 0x06,
+    _RESERVED_7 = 0x07,
+}
+impl Ccamode {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> Ccamode {
+        unsafe { core::mem::transmute(val & 0x07) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for Ccamode {
+    #[inline(always)]
+    fn from(val: u8) -> Ccamode {
+        Ccamode::from_bits(val)
+    }
+}
+impl From<Ccamode> for u8 {
+    #[inline(always)]
+    fn from(val: Ccamode) -> u8 {
+        Ccamode::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum Cistat {
+    #[doc = "Frame is received at 125kbps"]
+    LR125KBIT = 0x0,
+    #[doc = "Frame is received at 500kbps"]
+    LR500KBIT = 0x01,
+    _RESERVED_2 = 0x02,
+    _RESERVED_3 = 0x03,
+}
+impl Cistat {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> Cistat {
+        unsafe { core::mem::transmute(val & 0x03) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for Cistat {
+    #[inline(always)]
+    fn from(val: u8) -> Cistat {
+        Cistat::from_bits(val)
+    }
+}
+impl From<Cistat> for u8 {
+    #[inline(always)]
+    fn from(val: Cistat) -> u8 {
+        Cistat::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum Crcinc {
+    #[doc = "LENGTH does not contain CRC"]
+    EXCLUDE = 0x0,
+    #[doc = "LENGTH includes CRC"]
+    INCLUDE = 0x01,
+}
+impl Crcinc {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> Crcinc {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for Crcinc {
+    #[inline(always)]
+    fn from(val: u8) -> Crcinc {
+        Crcinc::from_bits(val)
+    }
+}
+impl From<Crcinc> for u8 {
+    #[inline(always)]
+    fn from(val: Crcinc) -> u8 {
+        Crcinc::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum Crcstatus {
+    #[doc = "Packet received with CRC error"]
+    CRCERROR = 0x0,
+    #[doc = "Packet received with CRC ok"]
+    CRCOK = 0x01,
+}
+impl Crcstatus {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> Crcstatus {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for Crcstatus {
+    #[inline(always)]
+    fn from(val: u8) -> Crcstatus {
+        Crcstatus::from_bits(val)
+    }
+}
+impl From<Crcstatus> for u8 {
+    #[inline(always)]
+    fn from(val: Crcstatus) -> u8 {
+        Crcstatus::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum Dtx {
+    #[doc = "Transmit '1'"]
+    B1 = 0x0,
+    #[doc = "Transmit '0'"]
+    B0 = 0x01,
+    #[doc = "Transmit center frequency"]
+    CENTER = 0x02,
+    _RESERVED_3 = 0x03,
+}
+impl Dtx {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> Dtx {
+        unsafe { core::mem::transmute(val & 0x03) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for Dtx {
+    #[inline(always)]
+    fn from(val: u8) -> Dtx {
+        Dtx::from_bits(val)
+    }
+}
+impl From<Dtx> for u8 {
+    #[inline(always)]
+    fn from(val: Dtx) -> u8 {
+        Dtx::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum Ena0 {
+    #[doc = "Disabled"]
+    DISABLED = 0x0,
+    #[doc = "Enabled"]
+    ENABLED = 0x01,
+}
+impl Ena0 {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> Ena0 {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for Ena0 {
+    #[inline(always)]
+    fn from(val: u8) -> Ena0 {
+        Ena0::from_bits(val)
+    }
+}
+impl From<Ena0> for u8 {
+    #[inline(always)]
+    fn from(val: Ena0) -> u8 {
+        Ena0::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum Ena1 {
+    #[doc = "Disabled"]
+    DISABLED = 0x0,
+    #[doc = "Enabled"]
+    ENABLED = 0x01,
+}
+impl Ena1 {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> Ena1 {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for Ena1 {
+    #[inline(always)]
+    fn from(val: u8) -> Ena1 {
+        Ena1::from_bits(val)
+    }
+}
+impl From<Ena1> for u8 {
+    #[inline(always)]
+    fn from(val: Ena1) -> u8 {
+        Ena1::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum Ena2 {
+    #[doc = "Disabled"]
+    DISABLED = 0x0,
+    #[doc = "Enabled"]
+    ENABLED = 0x01,
+}
+impl Ena2 {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> Ena2 {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for Ena2 {
+    #[inline(always)]
+    fn from(val: u8) -> Ena2 {
+        Ena2::from_bits(val)
+    }
+}
+impl From<Ena2> for u8 {
+    #[inline(always)]
+    fn from(val: Ena2) -> u8 {
+        Ena2::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum Ena3 {
+    #[doc = "Disabled"]
+    DISABLED = 0x0,
+    #[doc = "Enabled"]
+    ENABLED = 0x01,
+}
+impl Ena3 {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> Ena3 {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for Ena3 {
+    #[inline(always)]
+    fn from(val: u8) -> Ena3 {
+        Ena3::from_bits(val)
+    }
+}
+impl From<Ena3> for u8 {
+    #[inline(always)]
+    fn from(val: Ena3) -> u8 {
+        Ena3::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum Ena4 {
+    #[doc = "Disabled"]
+    DISABLED = 0x0,
+    #[doc = "Enabled"]
+    ENABLED = 0x01,
+}
+impl Ena4 {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> Ena4 {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for Ena4 {
+    #[inline(always)]
+    fn from(val: u8) -> Ena4 {
+        Ena4::from_bits(val)
+    }
+}
+impl From<Ena4> for u8 {
+    #[inline(always)]
+    fn from(val: Ena4) -> u8 {
+        Ena4::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum Ena5 {
+    #[doc = "Disabled"]
+    DISABLED = 0x0,
+    #[doc = "Enabled"]
+    ENABLED = 0x01,
+}
+impl Ena5 {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> Ena5 {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for Ena5 {
+    #[inline(always)]
+    fn from(val: u8) -> Ena5 {
+        Ena5::from_bits(val)
+    }
+}
+impl From<Ena5> for u8 {
+    #[inline(always)]
+    fn from(val: Ena5) -> u8 {
+        Ena5::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum Ena6 {
+    #[doc = "Disabled"]
+    DISABLED = 0x0,
+    #[doc = "Enabled"]
+    ENABLED = 0x01,
+}
+impl Ena6 {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> Ena6 {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for Ena6 {
+    #[inline(always)]
+    fn from(val: u8) -> Ena6 {
+        Ena6::from_bits(val)
+    }
+}
+impl From<Ena6> for u8 {
+    #[inline(always)]
+    fn from(val: Ena6) -> u8 {
+        Ena6::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum Ena7 {
+    #[doc = "Disabled"]
+    DISABLED = 0x0,
+    #[doc = "Enabled"]
+    ENABLED = 0x01,
+}
+impl Ena7 {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> Ena7 {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for Ena7 {
+    #[inline(always)]
+    fn from(val: u8) -> Ena7 {
+        Ena7::from_bits(val)
+    }
+}
+impl From<Ena7> for u8 {
+    #[inline(always)]
+    fn from(val: Ena7) -> u8 {
+        Ena7::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum Endian {
+    #[doc = "Least significant bit on air first"]
+    LITTLE = 0x0,
+    #[doc = "Most significant bit on air first"]
+    BIG = 0x01,
+}
+impl Endian {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> Endian {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for Endian {
+    #[inline(always)]
+    fn from(val: u8) -> Endian {
+        Endian::from_bits(val)
+    }
+}
+impl From<Endian> for u8 {
+    #[inline(always)]
+    fn from(val: Endian) -> u8 {
+        Endian::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum EventsAddress {
+    #[doc = "Event not generated"]
+    NOTGENERATED = 0x0,
+    #[doc = "Event generated"]
+    GENERATED = 0x01,
+}
+impl EventsAddress {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> EventsAddress {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for EventsAddress {
+    #[inline(always)]
+    fn from(val: u8) -> EventsAddress {
+        EventsAddress::from_bits(val)
+    }
+}
+impl From<EventsAddress> for u8 {
+    #[inline(always)]
+    fn from(val: EventsAddress) -> u8 {
+        EventsAddress::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum EventsBcmatch {
+    #[doc = "Event not generated"]
+    NOTGENERATED = 0x0,
+    #[doc = "Event generated"]
+    GENERATED = 0x01,
+}
+impl EventsBcmatch {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> EventsBcmatch {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for EventsBcmatch {
+    #[inline(always)]
+    fn from(val: u8) -> EventsBcmatch {
+        EventsBcmatch::from_bits(val)
+    }
+}
+impl From<EventsBcmatch> for u8 {
+    #[inline(always)]
+    fn from(val: EventsBcmatch) -> u8 {
+        EventsBcmatch::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum EventsCcabusy {
+    #[doc = "Event not generated"]
+    NOTGENERATED = 0x0,
+    #[doc = "Event generated"]
+    GENERATED = 0x01,
+}
+impl EventsCcabusy {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> EventsCcabusy {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for EventsCcabusy {
+    #[inline(always)]
+    fn from(val: u8) -> EventsCcabusy {
+        EventsCcabusy::from_bits(val)
+    }
+}
+impl From<EventsCcabusy> for u8 {
+    #[inline(always)]
+    fn from(val: EventsCcabusy) -> u8 {
+        EventsCcabusy::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum EventsCcaidle {
+    #[doc = "Event not generated"]
+    NOTGENERATED = 0x0,
+    #[doc = "Event generated"]
+    GENERATED = 0x01,
+}
+impl EventsCcaidle {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> EventsCcaidle {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for EventsCcaidle {
+    #[inline(always)]
+    fn from(val: u8) -> EventsCcaidle {
+        EventsCcaidle::from_bits(val)
+    }
+}
+impl From<EventsCcaidle> for u8 {
+    #[inline(always)]
+    fn from(val: EventsCcaidle) -> u8 {
+        EventsCcaidle::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum EventsCcastopped {
+    #[doc = "Event not generated"]
+    NOTGENERATED = 0x0,
+    #[doc = "Event generated"]
+    GENERATED = 0x01,
+}
+impl EventsCcastopped {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> EventsCcastopped {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for EventsCcastopped {
+    #[inline(always)]
+    fn from(val: u8) -> EventsCcastopped {
+        EventsCcastopped::from_bits(val)
+    }
+}
+impl From<EventsCcastopped> for u8 {
+    #[inline(always)]
+    fn from(val: EventsCcastopped) -> u8 {
+        EventsCcastopped::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum EventsCrcerror {
+    #[doc = "Event not generated"]
+    NOTGENERATED = 0x0,
+    #[doc = "Event generated"]
+    GENERATED = 0x01,
+}
+impl EventsCrcerror {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> EventsCrcerror {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for EventsCrcerror {
+    #[inline(always)]
+    fn from(val: u8) -> EventsCrcerror {
+        EventsCrcerror::from_bits(val)
+    }
+}
+impl From<EventsCrcerror> for u8 {
+    #[inline(always)]
+    fn from(val: EventsCrcerror) -> u8 {
+        EventsCrcerror::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum EventsCrcok {
+    #[doc = "Event not generated"]
+    NOTGENERATED = 0x0,
+    #[doc = "Event generated"]
+    GENERATED = 0x01,
+}
+impl EventsCrcok {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> EventsCrcok {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for EventsCrcok {
+    #[inline(always)]
+    fn from(val: u8) -> EventsCrcok {
+        EventsCrcok::from_bits(val)
+    }
+}
+impl From<EventsCrcok> for u8 {
+    #[inline(always)]
+    fn from(val: EventsCrcok) -> u8 {
+        EventsCrcok::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum EventsDevmatch {
+    #[doc = "Event not generated"]
+    NOTGENERATED = 0x0,
+    #[doc = "Event generated"]
+    GENERATED = 0x01,
+}
+impl EventsDevmatch {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> EventsDevmatch {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for EventsDevmatch {
+    #[inline(always)]
+    fn from(val: u8) -> EventsDevmatch {
+        EventsDevmatch::from_bits(val)
+    }
+}
+impl From<EventsDevmatch> for u8 {
+    #[inline(always)]
+    fn from(val: EventsDevmatch) -> u8 {
+        EventsDevmatch::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum EventsDevmiss {
+    #[doc = "Event not generated"]
+    NOTGENERATED = 0x0,
+    #[doc = "Event generated"]
+    GENERATED = 0x01,
+}
+impl EventsDevmiss {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> EventsDevmiss {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for EventsDevmiss {
+    #[inline(always)]
+    fn from(val: u8) -> EventsDevmiss {
+        EventsDevmiss::from_bits(val)
+    }
+}
+impl From<EventsDevmiss> for u8 {
+    #[inline(always)]
+    fn from(val: EventsDevmiss) -> u8 {
+        EventsDevmiss::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum EventsDisabled {
+    #[doc = "Event not generated"]
+    NOTGENERATED = 0x0,
+    #[doc = "Event generated"]
+    GENERATED = 0x01,
+}
+impl EventsDisabled {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> EventsDisabled {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for EventsDisabled {
+    #[inline(always)]
+    fn from(val: u8) -> EventsDisabled {
+        EventsDisabled::from_bits(val)
+    }
+}
+impl From<EventsDisabled> for u8 {
+    #[inline(always)]
+    fn from(val: EventsDisabled) -> u8 {
+        EventsDisabled::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum EventsEdend {
+    #[doc = "Event not generated"]
+    NOTGENERATED = 0x0,
+    #[doc = "Event generated"]
+    GENERATED = 0x01,
+}
+impl EventsEdend {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> EventsEdend {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for EventsEdend {
+    #[inline(always)]
+    fn from(val: u8) -> EventsEdend {
+        EventsEdend::from_bits(val)
+    }
+}
+impl From<EventsEdend> for u8 {
+    #[inline(always)]
+    fn from(val: EventsEdend) -> u8 {
+        EventsEdend::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum EventsEdstopped {
+    #[doc = "Event not generated"]
+    NOTGENERATED = 0x0,
+    #[doc = "Event generated"]
+    GENERATED = 0x01,
+}
+impl EventsEdstopped {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> EventsEdstopped {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for EventsEdstopped {
+    #[inline(always)]
+    fn from(val: u8) -> EventsEdstopped {
+        EventsEdstopped::from_bits(val)
+    }
+}
+impl From<EventsEdstopped> for u8 {
+    #[inline(always)]
+    fn from(val: EventsEdstopped) -> u8 {
+        EventsEdstopped::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum EventsEnd {
+    #[doc = "Event not generated"]
+    NOTGENERATED = 0x0,
+    #[doc = "Event generated"]
+    GENERATED = 0x01,
+}
+impl EventsEnd {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> EventsEnd {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for EventsEnd {
+    #[inline(always)]
+    fn from(val: u8) -> EventsEnd {
+        EventsEnd::from_bits(val)
+    }
+}
+impl From<EventsEnd> for u8 {
+    #[inline(always)]
+    fn from(val: EventsEnd) -> u8 {
+        EventsEnd::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum EventsFramestart {
+    #[doc = "Event not generated"]
+    NOTGENERATED = 0x0,
+    #[doc = "Event generated"]
+    GENERATED = 0x01,
+}
+impl EventsFramestart {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> EventsFramestart {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for EventsFramestart {
+    #[inline(always)]
+    fn from(val: u8) -> EventsFramestart {
+        EventsFramestart::from_bits(val)
+    }
+}
+impl From<EventsFramestart> for u8 {
+    #[inline(always)]
+    fn from(val: EventsFramestart) -> u8 {
+        EventsFramestart::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum EventsMhrmatch {
+    #[doc = "Event not generated"]
+    NOTGENERATED = 0x0,
+    #[doc = "Event generated"]
+    GENERATED = 0x01,
+}
+impl EventsMhrmatch {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> EventsMhrmatch {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for EventsMhrmatch {
+    #[inline(always)]
+    fn from(val: u8) -> EventsMhrmatch {
+        EventsMhrmatch::from_bits(val)
+    }
+}
+impl From<EventsMhrmatch> for u8 {
+    #[inline(always)]
+    fn from(val: EventsMhrmatch) -> u8 {
+        EventsMhrmatch::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum EventsPayload {
+    #[doc = "Event not generated"]
+    NOTGENERATED = 0x0,
+    #[doc = "Event generated"]
+    GENERATED = 0x01,
+}
+impl EventsPayload {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> EventsPayload {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for EventsPayload {
+    #[inline(always)]
+    fn from(val: u8) -> EventsPayload {
+        EventsPayload::from_bits(val)
+    }
+}
+impl From<EventsPayload> for u8 {
+    #[inline(always)]
+    fn from(val: EventsPayload) -> u8 {
+        EventsPayload::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum EventsPhyend {
+    #[doc = "Event not generated"]
+    NOTGENERATED = 0x0,
+    #[doc = "Event generated"]
+    GENERATED = 0x01,
+}
+impl EventsPhyend {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> EventsPhyend {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for EventsPhyend {
+    #[inline(always)]
+    fn from(val: u8) -> EventsPhyend {
+        EventsPhyend::from_bits(val)
+    }
+}
+impl From<EventsPhyend> for u8 {
+    #[inline(always)]
+    fn from(val: EventsPhyend) -> u8 {
+        EventsPhyend::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum EventsRateboost {
+    #[doc = "Event not generated"]
+    NOTGENERATED = 0x0,
+    #[doc = "Event generated"]
+    GENERATED = 0x01,
+}
+impl EventsRateboost {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> EventsRateboost {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for EventsRateboost {
+    #[inline(always)]
+    fn from(val: u8) -> EventsRateboost {
+        EventsRateboost::from_bits(val)
+    }
+}
+impl From<EventsRateboost> for u8 {
+    #[inline(always)]
+    fn from(val: EventsRateboost) -> u8 {
+        EventsRateboost::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum EventsReady {
+    #[doc = "Event not generated"]
+    NOTGENERATED = 0x0,
+    #[doc = "Event generated"]
+    GENERATED = 0x01,
+}
+impl EventsReady {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> EventsReady {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for EventsReady {
+    #[inline(always)]
+    fn from(val: u8) -> EventsReady {
+        EventsReady::from_bits(val)
+    }
+}
+impl From<EventsReady> for u8 {
+    #[inline(always)]
+    fn from(val: EventsReady) -> u8 {
+        EventsReady::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum EventsRssiend {
+    #[doc = "Event not generated"]
+    NOTGENERATED = 0x0,
+    #[doc = "Event generated"]
+    GENERATED = 0x01,
+}
+impl EventsRssiend {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> EventsRssiend {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for EventsRssiend {
+    #[inline(always)]
+    fn from(val: u8) -> EventsRssiend {
+        EventsRssiend::from_bits(val)
+    }
+}
+impl From<EventsRssiend> for u8 {
+    #[inline(always)]
+    fn from(val: EventsRssiend) -> u8 {
+        EventsRssiend::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum EventsRxready {
+    #[doc = "Event not generated"]
+    NOTGENERATED = 0x0,
+    #[doc = "Event generated"]
+    GENERATED = 0x01,
+}
+impl EventsRxready {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> EventsRxready {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for EventsRxready {
+    #[inline(always)]
+    fn from(val: u8) -> EventsRxready {
+        EventsRxready::from_bits(val)
+    }
+}
+impl From<EventsRxready> for u8 {
+    #[inline(always)]
+    fn from(val: EventsRxready) -> u8 {
+        EventsRxready::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum EventsSync {
+    #[doc = "Event not generated"]
+    NOTGENERATED = 0x0,
+    #[doc = "Event generated"]
+    GENERATED = 0x01,
+}
+impl EventsSync {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> EventsSync {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for EventsSync {
+    #[inline(always)]
+    fn from(val: u8) -> EventsSync {
+        EventsSync::from_bits(val)
+    }
+}
+impl From<EventsSync> for u8 {
+    #[inline(always)]
+    fn from(val: EventsSync) -> u8 {
+        EventsSync::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum EventsTxready {
+    #[doc = "Event not generated"]
+    NOTGENERATED = 0x0,
+    #[doc = "Event generated"]
+    GENERATED = 0x01,
+}
+impl EventsTxready {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> EventsTxready {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for EventsTxready {
+    #[inline(always)]
+    fn from(val: u8) -> EventsTxready {
+        EventsTxready::from_bits(val)
+    }
+}
+impl From<EventsTxready> for u8 {
+    #[inline(always)]
+    fn from(val: EventsTxready) -> u8 {
+        EventsTxready::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum Len {
+    #[doc = "CRC length is zero and CRC calculation is disabled"]
+    DISABLED = 0x0,
+    #[doc = "CRC length is one byte and CRC calculation is enabled"]
+    ONE = 0x01,
+    #[doc = "CRC length is two bytes and CRC calculation is enabled"]
+    TWO = 0x02,
+    #[doc = "CRC length is three bytes and CRC calculation is enabled"]
+    THREE = 0x03,
+}
+impl Len {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> Len {
+        unsafe { core::mem::transmute(val & 0x03) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for Len {
+    #[inline(always)]
+    fn from(val: u8) -> Len {
+        Len::from_bits(val)
+    }
+}
+impl From<Len> for u8 {
+    #[inline(always)]
+    fn from(val: Len) -> u8 {
+        Len::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum Map {
+    #[doc = "Channel map between 2400 MHZ .. 2500 MHz"]
+    DEFAULT = 0x0,
+    #[doc = "Channel map between 2360 MHZ .. 2460 MHz"]
+    LOW = 0x01,
+}
+impl Map {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> Map {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for Map {
+    #[inline(always)]
+    fn from(val: u8) -> Map {
+        Map::from_bits(val)
+    }
+}
+impl From<Map> for u8 {
+    #[inline(always)]
+    fn from(val: Map) -> u8 {
+        Map::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum Mode {
+    #[doc = "1 Mbit/s Nordic proprietary radio mode"]
+    NRF_1MBIT = 0x0,
+    #[doc = "2 Mbit/s Nordic proprietary radio mode"]
+    NRF_2MBIT = 0x01,
+    _RESERVED_2 = 0x02,
+    #[doc = "1 Mbit/s BLE"]
+    BLE_1MBIT = 0x03,
+    #[doc = "2 Mbit/s BLE"]
+    BLE_2MBIT = 0x04,
+    #[doc = "Long range 125 kbit/s TX, 125 kbit/s and 500 kbit/s RX"]
+    BLE_LR125KBIT = 0x05,
+    #[doc = "Long range 500 kbit/s TX, 125 kbit/s and 500 kbit/s RX"]
+    BLE_LR500KBIT = 0x06,
+    _RESERVED_7 = 0x07,
+    _RESERVED_8 = 0x08,
+    _RESERVED_9 = 0x09,
+    _RESERVED_a = 0x0a,
+    _RESERVED_b = 0x0b,
+    _RESERVED_c = 0x0c,
+    _RESERVED_d = 0x0d,
+    _RESERVED_e = 0x0e,
+    #[doc = "IEEE 802.15.4-2006 250 kbit/s"]
+    IEEE802154_250KBIT = 0x0f,
+}
+impl Mode {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> Mode {
+        unsafe { core::mem::transmute(val & 0x0f) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for Mode {
+    #[inline(always)]
+    fn from(val: u8) -> Mode {
+        Mode::from_bits(val)
+    }
+}
+impl From<Mode> for u8 {
+    #[inline(always)]
+    fn from(val: Mode) -> u8 {
+        Mode::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum Pdustat {
+    #[doc = "Payload less than PCNF1.MAXLEN"]
+    LESSTHAN = 0x0,
+    #[doc = "Payload greater than PCNF1.MAXLEN"]
+    GREATERTHAN = 0x01,
+}
+impl Pdustat {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> Pdustat {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for Pdustat {
+    #[inline(always)]
+    fn from(val: u8) -> Pdustat {
+        Pdustat::from_bits(val)
+    }
+}
+impl From<Pdustat> for u8 {
+    #[inline(always)]
+    fn from(val: Pdustat) -> u8 {
+        Pdustat::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum Plen {
+    #[doc = "8-bit preamble"]
+    _8BIT = 0x0,
+    #[doc = "16-bit preamble"]
+    _16BIT = 0x01,
+    #[doc = "32-bit zero preamble - used for IEEE 802.15.4"]
+    _32BITZERO = 0x02,
+    #[doc = "Preamble - used for BLE long range"]
+    LONGRANGE = 0x03,
+}
+impl Plen {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> Plen {
+        unsafe { core::mem::transmute(val & 0x03) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for Plen {
+    #[inline(always)]
+    fn from(val: u8) -> Plen {
+        Plen::from_bits(val)
+    }
+}
+impl From<Plen> for u8 {
+    #[inline(always)]
+    fn from(val: Plen) -> u8 {
+        Plen::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum Power {
+    #[doc = "Peripheral is powered off"]
+    DISABLED = 0x0,
+    #[doc = "Peripheral is powered on"]
+    ENABLED = 0x01,
+}
+impl Power {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> Power {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for Power {
+    #[inline(always)]
+    fn from(val: u8) -> Power {
+        Power::from_bits(val)
+    }
+}
+impl From<Power> for u8 {
+    #[inline(always)]
+    fn from(val: Power) -> u8 {
+        Power::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum Ru {
+    #[doc = "Default ramp-up time (tRXEN and tTXEN), compatible with firmware written for nRF51"]
+    DEFAULT = 0x0,
+    #[doc = "Fast ramp-up (tRXEN,FAST and tTXEN,FAST), see electrical specification for more information"]
+    FAST = 0x01,
+}
+impl Ru {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> Ru {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for Ru {
+    #[inline(always)]
+    fn from(val: u8) -> Ru {
+        Ru::from_bits(val)
+    }
+}
+impl From<Ru> for u8 {
+    #[inline(always)]
+    fn from(val: Ru) -> u8 {
+        Ru::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum S1incl {
+    #[doc = "Include S1 field in RAM only if S1LEN &gt; 0"]
+    AUTOMATIC = 0x0,
+    #[doc = "Always include S1 field in RAM independent of S1LEN"]
+    INCLUDE = 0x01,
+}
+impl S1incl {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> S1incl {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for S1incl {
+    #[inline(always)]
+    fn from(val: u8) -> S1incl {
+        S1incl::from_bits(val)
+    }
+}
+impl From<S1incl> for u8 {
+    #[inline(always)]
+    fn from(val: S1incl) -> u8 {
+        S1incl::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum Skipaddr {
+    #[doc = "CRC calculation includes address field"]
+    INCLUDE = 0x0,
+    #[doc = "CRC calculation does not include address field. The CRC calculation will start at the first byte after the address."]
+    SKIP = 0x01,
+    #[doc = "CRC calculation as per 802.15.4 standard. Starting at first byte after length field."]
+    IEEE802154 = 0x02,
+    _RESERVED_3 = 0x03,
+}
+impl Skipaddr {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> Skipaddr {
+        unsafe { core::mem::transmute(val & 0x03) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for Skipaddr {
+    #[inline(always)]
+    fn from(val: u8) -> Skipaddr {
+        Skipaddr::from_bits(val)
+    }
+}
+impl From<Skipaddr> for u8 {
+    #[inline(always)]
+    fn from(val: Skipaddr) -> u8 {
+        Skipaddr::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum State {
+    #[doc = "RADIO is in the Disabled state"]
+    DISABLED = 0x0,
+    #[doc = "RADIO is in the RXRU state"]
+    RXRU = 0x01,
+    #[doc = "RADIO is in the RXIDLE state"]
+    RXIDLE = 0x02,
+    #[doc = "RADIO is in the RX state"]
+    RX = 0x03,
+    #[doc = "RADIO is in the RXDISABLED state"]
+    RXDISABLE = 0x04,
+    _RESERVED_5 = 0x05,
+    _RESERVED_6 = 0x06,
+    _RESERVED_7 = 0x07,
+    _RESERVED_8 = 0x08,
+    #[doc = "RADIO is in the TXRU state"]
+    TXRU = 0x09,
+    #[doc = "RADIO is in the TXIDLE state"]
+    TXIDLE = 0x0a,
+    #[doc = "RADIO is in the TX state"]
+    TX = 0x0b,
+    #[doc = "RADIO is in the TXDISABLED state"]
+    TXDISABLE = 0x0c,
+    _RESERVED_d = 0x0d,
+    _RESERVED_e = 0x0e,
+    _RESERVED_f = 0x0f,
+}
+impl State {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> State {
+        unsafe { core::mem::transmute(val & 0x0f) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for State {
+    #[inline(always)]
+    fn from(val: u8) -> State {
+        State::from_bits(val)
+    }
+}
+impl From<State> for u8 {
+    #[inline(always)]
+    fn from(val: State) -> u8 {
+        State::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum TasksBcstart {
+    _RESERVED_0 = 0x0,
+    #[doc = "Trigger task"]
+    TRIGGER = 0x01,
+}
+impl TasksBcstart {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> TasksBcstart {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for TasksBcstart {
+    #[inline(always)]
+    fn from(val: u8) -> TasksBcstart {
+        TasksBcstart::from_bits(val)
+    }
+}
+impl From<TasksBcstart> for u8 {
+    #[inline(always)]
+    fn from(val: TasksBcstart) -> u8 {
+        TasksBcstart::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum TasksBcstop {
+    _RESERVED_0 = 0x0,
+    #[doc = "Trigger task"]
+    TRIGGER = 0x01,
+}
+impl TasksBcstop {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> TasksBcstop {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for TasksBcstop {
+    #[inline(always)]
+    fn from(val: u8) -> TasksBcstop {
+        TasksBcstop::from_bits(val)
+    }
+}
+impl From<TasksBcstop> for u8 {
+    #[inline(always)]
+    fn from(val: TasksBcstop) -> u8 {
+        TasksBcstop::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum TasksCcastart {
+    _RESERVED_0 = 0x0,
+    #[doc = "Trigger task"]
+    TRIGGER = 0x01,
+}
+impl TasksCcastart {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> TasksCcastart {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for TasksCcastart {
+    #[inline(always)]
+    fn from(val: u8) -> TasksCcastart {
+        TasksCcastart::from_bits(val)
+    }
+}
+impl From<TasksCcastart> for u8 {
+    #[inline(always)]
+    fn from(val: TasksCcastart) -> u8 {
+        TasksCcastart::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum TasksCcastop {
+    _RESERVED_0 = 0x0,
+    #[doc = "Trigger task"]
+    TRIGGER = 0x01,
+}
+impl TasksCcastop {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> TasksCcastop {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for TasksCcastop {
+    #[inline(always)]
+    fn from(val: u8) -> TasksCcastop {
+        TasksCcastop::from_bits(val)
+    }
+}
+impl From<TasksCcastop> for u8 {
+    #[inline(always)]
+    fn from(val: TasksCcastop) -> u8 {
+        TasksCcastop::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum TasksDisable {
+    _RESERVED_0 = 0x0,
+    #[doc = "Trigger task"]
+    TRIGGER = 0x01,
+}
+impl TasksDisable {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> TasksDisable {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for TasksDisable {
+    #[inline(always)]
+    fn from(val: u8) -> TasksDisable {
+        TasksDisable::from_bits(val)
+    }
+}
+impl From<TasksDisable> for u8 {
+    #[inline(always)]
+    fn from(val: TasksDisable) -> u8 {
+        TasksDisable::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum TasksEdstart {
+    _RESERVED_0 = 0x0,
+    #[doc = "Trigger task"]
+    TRIGGER = 0x01,
+}
+impl TasksEdstart {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> TasksEdstart {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for TasksEdstart {
+    #[inline(always)]
+    fn from(val: u8) -> TasksEdstart {
+        TasksEdstart::from_bits(val)
+    }
+}
+impl From<TasksEdstart> for u8 {
+    #[inline(always)]
+    fn from(val: TasksEdstart) -> u8 {
+        TasksEdstart::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum TasksEdstop {
+    _RESERVED_0 = 0x0,
+    #[doc = "Trigger task"]
+    TRIGGER = 0x01,
+}
+impl TasksEdstop {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> TasksEdstop {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for TasksEdstop {
+    #[inline(always)]
+    fn from(val: u8) -> TasksEdstop {
+        TasksEdstop::from_bits(val)
+    }
+}
+impl From<TasksEdstop> for u8 {
+    #[inline(always)]
+    fn from(val: TasksEdstop) -> u8 {
+        TasksEdstop::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum TasksRssistart {
+    _RESERVED_0 = 0x0,
+    #[doc = "Trigger task"]
+    TRIGGER = 0x01,
+}
+impl TasksRssistart {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> TasksRssistart {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for TasksRssistart {
+    #[inline(always)]
+    fn from(val: u8) -> TasksRssistart {
+        TasksRssistart::from_bits(val)
+    }
+}
+impl From<TasksRssistart> for u8 {
+    #[inline(always)]
+    fn from(val: TasksRssistart) -> u8 {
+        TasksRssistart::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum TasksRssistop {
+    _RESERVED_0 = 0x0,
+    #[doc = "Trigger task"]
+    TRIGGER = 0x01,
+}
+impl TasksRssistop {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> TasksRssistop {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for TasksRssistop {
+    #[inline(always)]
+    fn from(val: u8) -> TasksRssistop {
+        TasksRssistop::from_bits(val)
+    }
+}
+impl From<TasksRssistop> for u8 {
+    #[inline(always)]
+    fn from(val: TasksRssistop) -> u8 {
+        TasksRssistop::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum TasksRxen {
+    _RESERVED_0 = 0x0,
+    #[doc = "Trigger task"]
+    TRIGGER = 0x01,
+}
+impl TasksRxen {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> TasksRxen {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for TasksRxen {
+    #[inline(always)]
+    fn from(val: u8) -> TasksRxen {
+        TasksRxen::from_bits(val)
+    }
+}
+impl From<TasksRxen> for u8 {
+    #[inline(always)]
+    fn from(val: TasksRxen) -> u8 {
+        TasksRxen::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum TasksStart {
+    _RESERVED_0 = 0x0,
+    #[doc = "Trigger task"]
+    TRIGGER = 0x01,
+}
+impl TasksStart {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> TasksStart {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for TasksStart {
+    #[inline(always)]
+    fn from(val: u8) -> TasksStart {
+        TasksStart::from_bits(val)
+    }
+}
+impl From<TasksStart> for u8 {
+    #[inline(always)]
+    fn from(val: TasksStart) -> u8 {
+        TasksStart::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum TasksStop {
+    _RESERVED_0 = 0x0,
+    #[doc = "Trigger task"]
+    TRIGGER = 0x01,
+}
+impl TasksStop {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> TasksStop {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for TasksStop {
+    #[inline(always)]
+    fn from(val: u8) -> TasksStop {
+        TasksStop::from_bits(val)
+    }
+}
+impl From<TasksStop> for u8 {
+    #[inline(always)]
+    fn from(val: TasksStop) -> u8 {
+        TasksStop::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum TasksTxen {
+    _RESERVED_0 = 0x0,
+    #[doc = "Trigger task"]
+    TRIGGER = 0x01,
+}
+impl TasksTxen {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> TasksTxen {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for TasksTxen {
+    #[inline(always)]
+    fn from(val: u8) -> TasksTxen {
+        TasksTxen::from_bits(val)
+    }
+}
+impl From<TasksTxen> for u8 {
+    #[inline(always)]
+    fn from(val: TasksTxen) -> u8 {
+        TasksTxen::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum Txpower {
+    #[doc = "0 dBm"]
+    _0DBM = 0x0,
+    _RESERVED_1 = 0x01,
+    #[doc = "+2 dBm"]
+    POS2DBM = 0x02,
+    #[doc = "+3 dBm"]
+    POS3DBM = 0x03,
+    #[doc = "+4 dBm"]
+    POS4DBM = 0x04,
+    #[doc = "+5 dBm"]
+    POS5DBM = 0x05,
+    #[doc = "+6 dBm"]
+    POS6DBM = 0x06,
+    #[doc = "+7 dBm"]
+    POS7DBM = 0x07,
+    #[doc = "+8 dBm"]
+    POS8DBM = 0x08,
+    _RESERVED_9 = 0x09,
+    _RESERVED_a = 0x0a,
+    _RESERVED_b = 0x0b,
+    _RESERVED_c = 0x0c,
+    _RESERVED_d = 0x0d,
+    _RESERVED_e = 0x0e,
+    _RESERVED_f = 0x0f,
+    _RESERVED_10 = 0x10,
+    _RESERVED_11 = 0x11,
+    _RESERVED_12 = 0x12,
+    _RESERVED_13 = 0x13,
+    _RESERVED_14 = 0x14,
+    _RESERVED_15 = 0x15,
+    _RESERVED_16 = 0x16,
+    _RESERVED_17 = 0x17,
+    _RESERVED_18 = 0x18,
+    _RESERVED_19 = 0x19,
+    _RESERVED_1a = 0x1a,
+    _RESERVED_1b = 0x1b,
+    _RESERVED_1c = 0x1c,
+    _RESERVED_1d = 0x1d,
+    _RESERVED_1e = 0x1e,
+    _RESERVED_1f = 0x1f,
+    _RESERVED_20 = 0x20,
+    _RESERVED_21 = 0x21,
+    _RESERVED_22 = 0x22,
+    _RESERVED_23 = 0x23,
+    _RESERVED_24 = 0x24,
+    _RESERVED_25 = 0x25,
+    _RESERVED_26 = 0x26,
+    _RESERVED_27 = 0x27,
+    _RESERVED_28 = 0x28,
+    _RESERVED_29 = 0x29,
+    _RESERVED_2a = 0x2a,
+    _RESERVED_2b = 0x2b,
+    _RESERVED_2c = 0x2c,
+    _RESERVED_2d = 0x2d,
+    _RESERVED_2e = 0x2e,
+    _RESERVED_2f = 0x2f,
+    _RESERVED_30 = 0x30,
+    _RESERVED_31 = 0x31,
+    _RESERVED_32 = 0x32,
+    _RESERVED_33 = 0x33,
+    _RESERVED_34 = 0x34,
+    _RESERVED_35 = 0x35,
+    _RESERVED_36 = 0x36,
+    _RESERVED_37 = 0x37,
+    _RESERVED_38 = 0x38,
+    _RESERVED_39 = 0x39,
+    _RESERVED_3a = 0x3a,
+    _RESERVED_3b = 0x3b,
+    _RESERVED_3c = 0x3c,
+    _RESERVED_3d = 0x3d,
+    _RESERVED_3e = 0x3e,
+    _RESERVED_3f = 0x3f,
+    _RESERVED_40 = 0x40,
+    _RESERVED_41 = 0x41,
+    _RESERVED_42 = 0x42,
+    _RESERVED_43 = 0x43,
+    _RESERVED_44 = 0x44,
+    _RESERVED_45 = 0x45,
+    _RESERVED_46 = 0x46,
+    _RESERVED_47 = 0x47,
+    _RESERVED_48 = 0x48,
+    _RESERVED_49 = 0x49,
+    _RESERVED_4a = 0x4a,
+    _RESERVED_4b = 0x4b,
+    _RESERVED_4c = 0x4c,
+    _RESERVED_4d = 0x4d,
+    _RESERVED_4e = 0x4e,
+    _RESERVED_4f = 0x4f,
+    _RESERVED_50 = 0x50,
+    _RESERVED_51 = 0x51,
+    _RESERVED_52 = 0x52,
+    _RESERVED_53 = 0x53,
+    _RESERVED_54 = 0x54,
+    _RESERVED_55 = 0x55,
+    _RESERVED_56 = 0x56,
+    _RESERVED_57 = 0x57,
+    _RESERVED_58 = 0x58,
+    _RESERVED_59 = 0x59,
+    _RESERVED_5a = 0x5a,
+    _RESERVED_5b = 0x5b,
+    _RESERVED_5c = 0x5c,
+    _RESERVED_5d = 0x5d,
+    _RESERVED_5e = 0x5e,
+    _RESERVED_5f = 0x5f,
+    _RESERVED_60 = 0x60,
+    _RESERVED_61 = 0x61,
+    _RESERVED_62 = 0x62,
+    _RESERVED_63 = 0x63,
+    _RESERVED_64 = 0x64,
+    _RESERVED_65 = 0x65,
+    _RESERVED_66 = 0x66,
+    _RESERVED_67 = 0x67,
+    _RESERVED_68 = 0x68,
+    _RESERVED_69 = 0x69,
+    _RESERVED_6a = 0x6a,
+    _RESERVED_6b = 0x6b,
+    _RESERVED_6c = 0x6c,
+    _RESERVED_6d = 0x6d,
+    _RESERVED_6e = 0x6e,
+    _RESERVED_6f = 0x6f,
+    _RESERVED_70 = 0x70,
+    _RESERVED_71 = 0x71,
+    _RESERVED_72 = 0x72,
+    _RESERVED_73 = 0x73,
+    _RESERVED_74 = 0x74,
+    _RESERVED_75 = 0x75,
+    _RESERVED_76 = 0x76,
+    _RESERVED_77 = 0x77,
+    _RESERVED_78 = 0x78,
+    _RESERVED_79 = 0x79,
+    _RESERVED_7a = 0x7a,
+    _RESERVED_7b = 0x7b,
+    _RESERVED_7c = 0x7c,
+    _RESERVED_7d = 0x7d,
+    _RESERVED_7e = 0x7e,
+    _RESERVED_7f = 0x7f,
+    _RESERVED_80 = 0x80,
+    _RESERVED_81 = 0x81,
+    _RESERVED_82 = 0x82,
+    _RESERVED_83 = 0x83,
+    _RESERVED_84 = 0x84,
+    _RESERVED_85 = 0x85,
+    _RESERVED_86 = 0x86,
+    _RESERVED_87 = 0x87,
+    _RESERVED_88 = 0x88,
+    _RESERVED_89 = 0x89,
+    _RESERVED_8a = 0x8a,
+    _RESERVED_8b = 0x8b,
+    _RESERVED_8c = 0x8c,
+    _RESERVED_8d = 0x8d,
+    _RESERVED_8e = 0x8e,
+    _RESERVED_8f = 0x8f,
+    _RESERVED_90 = 0x90,
+    _RESERVED_91 = 0x91,
+    _RESERVED_92 = 0x92,
+    _RESERVED_93 = 0x93,
+    _RESERVED_94 = 0x94,
+    _RESERVED_95 = 0x95,
+    _RESERVED_96 = 0x96,
+    _RESERVED_97 = 0x97,
+    _RESERVED_98 = 0x98,
+    _RESERVED_99 = 0x99,
+    _RESERVED_9a = 0x9a,
+    _RESERVED_9b = 0x9b,
+    _RESERVED_9c = 0x9c,
+    _RESERVED_9d = 0x9d,
+    _RESERVED_9e = 0x9e,
+    _RESERVED_9f = 0x9f,
+    _RESERVED_a0 = 0xa0,
+    _RESERVED_a1 = 0xa1,
+    _RESERVED_a2 = 0xa2,
+    _RESERVED_a3 = 0xa3,
+    _RESERVED_a4 = 0xa4,
+    _RESERVED_a5 = 0xa5,
+    _RESERVED_a6 = 0xa6,
+    _RESERVED_a7 = 0xa7,
+    _RESERVED_a8 = 0xa8,
+    _RESERVED_a9 = 0xa9,
+    _RESERVED_aa = 0xaa,
+    _RESERVED_ab = 0xab,
+    _RESERVED_ac = 0xac,
+    _RESERVED_ad = 0xad,
+    _RESERVED_ae = 0xae,
+    _RESERVED_af = 0xaf,
+    _RESERVED_b0 = 0xb0,
+    _RESERVED_b1 = 0xb1,
+    _RESERVED_b2 = 0xb2,
+    _RESERVED_b3 = 0xb3,
+    _RESERVED_b4 = 0xb4,
+    _RESERVED_b5 = 0xb5,
+    _RESERVED_b6 = 0xb6,
+    _RESERVED_b7 = 0xb7,
+    _RESERVED_b8 = 0xb8,
+    _RESERVED_b9 = 0xb9,
+    _RESERVED_ba = 0xba,
+    _RESERVED_bb = 0xbb,
+    _RESERVED_bc = 0xbc,
+    _RESERVED_bd = 0xbd,
+    _RESERVED_be = 0xbe,
+    _RESERVED_bf = 0xbf,
+    _RESERVED_c0 = 0xc0,
+    _RESERVED_c1 = 0xc1,
+    _RESERVED_c2 = 0xc2,
+    _RESERVED_c3 = 0xc3,
+    _RESERVED_c4 = 0xc4,
+    _RESERVED_c5 = 0xc5,
+    _RESERVED_c6 = 0xc6,
+    _RESERVED_c7 = 0xc7,
+    _RESERVED_c8 = 0xc8,
+    _RESERVED_c9 = 0xc9,
+    _RESERVED_ca = 0xca,
+    _RESERVED_cb = 0xcb,
+    _RESERVED_cc = 0xcc,
+    _RESERVED_cd = 0xcd,
+    _RESERVED_ce = 0xce,
+    _RESERVED_cf = 0xcf,
+    _RESERVED_d0 = 0xd0,
+    _RESERVED_d1 = 0xd1,
+    _RESERVED_d2 = 0xd2,
+    _RESERVED_d3 = 0xd3,
+    _RESERVED_d4 = 0xd4,
+    _RESERVED_d5 = 0xd5,
+    _RESERVED_d6 = 0xd6,
+    _RESERVED_d7 = 0xd7,
+    #[doc = "-40 dBm"]
+    NEG40DBM = 0xd8,
+    _RESERVED_d9 = 0xd9,
+    _RESERVED_da = 0xda,
+    _RESERVED_db = 0xdb,
+    _RESERVED_dc = 0xdc,
+    _RESERVED_dd = 0xdd,
+    _RESERVED_de = 0xde,
+    _RESERVED_df = 0xdf,
+    _RESERVED_e0 = 0xe0,
+    _RESERVED_e1 = 0xe1,
+    #[doc = "Deprecated enumerator - -40 dBm"]
+    NEG30DBM = 0xe2,
+    _RESERVED_e3 = 0xe3,
+    _RESERVED_e4 = 0xe4,
+    _RESERVED_e5 = 0xe5,
+    _RESERVED_e6 = 0xe6,
+    _RESERVED_e7 = 0xe7,
+    _RESERVED_e8 = 0xe8,
+    _RESERVED_e9 = 0xe9,
+    _RESERVED_ea = 0xea,
+    _RESERVED_eb = 0xeb,
+    #[doc = "-20 dBm"]
+    NEG20DBM = 0xec,
+    _RESERVED_ed = 0xed,
+    _RESERVED_ee = 0xee,
+    _RESERVED_ef = 0xef,
+    #[doc = "-16 dBm"]
+    NEG16DBM = 0xf0,
+    _RESERVED_f1 = 0xf1,
+    _RESERVED_f2 = 0xf2,
+    _RESERVED_f3 = 0xf3,
+    #[doc = "-12 dBm"]
+    NEG12DBM = 0xf4,
+    _RESERVED_f5 = 0xf5,
+    _RESERVED_f6 = 0xf6,
+    _RESERVED_f7 = 0xf7,
+    #[doc = "-8 dBm"]
+    NEG8DBM = 0xf8,
+    _RESERVED_f9 = 0xf9,
+    _RESERVED_fa = 0xfa,
+    _RESERVED_fb = 0xfb,
+    #[doc = "-4 dBm"]
+    NEG4DBM = 0xfc,
+    _RESERVED_fd = 0xfd,
+    _RESERVED_fe = 0xfe,
+    _RESERVED_ff = 0xff,
+}
+impl Txpower {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> Txpower {
+        unsafe { core::mem::transmute(val & 0xff) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for Txpower {
+    #[inline(always)]
+    fn from(val: u8) -> Txpower {
+        Txpower::from_bits(val)
+    }
+}
+impl From<Txpower> for u8 {
+    #[inline(always)]
+    fn from(val: Txpower) -> u8 {
+        Txpower::to_bits(val)
+    }
+}
+#[repr(u8)]
+#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd)]
+pub enum Whiteen {
+    #[doc = "Disable"]
+    DISABLED = 0x0,
+    #[doc = "Enable"]
+    ENABLED = 0x01,
+}
+impl Whiteen {
+    #[inline(always)]
+    pub const fn from_bits(val: u8) -> Whiteen {
+        unsafe { core::mem::transmute(val & 0x01) }
+    }
+    #[inline(always)]
+    pub const fn to_bits(self) -> u8 {
+        unsafe { core::mem::transmute(self) }
+    }
+}
+impl From<u8> for Whiteen {
+    #[inline(always)]
+    fn from(val: u8) -> Whiteen {
+        Whiteen::from_bits(val)
+    }
+}
+impl From<Whiteen> for u8 {
+    #[inline(always)]
+    fn from(val: Whiteen) -> u8 {
+        Whiteen::to_bits(val)
+    }
+}

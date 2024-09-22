@@ -21,6 +21,26 @@ set -euxo pipefail
 rm -rf src/nrf*
 rm -rf src/lib.rs
 
+# nrf51 = ["nrf51-pac", "_nrf51"]
+# nrf52805 = ["nrf52805-pac", "_nrf52"]
+# nrf52810 = ["nrf52810-pac", "_nrf52"]
+# nrf52811 = ["nrf52811-pac", "_nrf52"]
+# nrf52820 = ["nrf52820-pac", "_nrf52"]
+# nrf52832 = ["nrf52832-pac", "_nrf52", "_nrf52832_anomaly_109"]
+# nrf52833 = ["nrf52833-pac", "_nrf52", "_gpio-p1"]
+# nrf52840 = ["nrf52840-pac", "_nrf52", "_gpio-p1"]
+# nrf5340-app-s = ["_nrf5340-app", "_s"]
+# nrf5340-app-ns = ["_nrf5340-app", "_ns"]
+# nrf5340-net = ["_nrf5340-net"]
+# nrf9160-s = ["_nrf9160", "_s", "_nrf91"]
+# nrf9160-ns = ["_nrf9160", "_ns", "_nrf91"]
+# nrf9120-s = ["_nrf9120", "_s", "_nrf91"]
+# nrf9151-s = ["nrf9120-s"]
+# nrf9161-s = ["nrf9120-s"]
+# nrf9120-ns = ["_nrf9120", "_ns", "_nrf91"]
+# nrf9151-ns = ["nrf9120-ns"]
+# nrf9161-ns = ["nrf9120-ns"]
+
 declare -A identifiers=(
     # Chip name to SVD/YAML/.X identifier
     # This allows to have multiple chip definition with the same SVD/YAML/.X file-set (e.g. for the nrf5340-app chip)
